@@ -7,8 +7,8 @@ Amazon SQS (asynchronous communication)
 Amazon S3 (model storage)
 
 # Steps
-Client sends image (base64) to API Gateway
-Detection Lambda extracts faces using MTCNN
-Faces are sent to SQS queue
-Recognition Lambda processes each face
-Results are sent to response queue
+- Client sends image (base64) to API Gateway
+- Detection Lambda extracts faces using MTCNN
+- Faces are sent to SQS queue
+- Recognition Lambda processes each face
+- Results are sent to response queue
