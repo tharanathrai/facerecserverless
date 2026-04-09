@@ -14,14 +14,4 @@ Amazon S3 (model storage)
 - Results are sent to response queue
 
 # Flow
-Client
-  ↓
-API Gateway
-  ↓
-Lambda (Face Detection)
-  ↓
-SQS (Request Queue)
-  ↓
-Lambda (Face Recognition)
-  ↓
-SQS (Response Queue)
+Client -> API Gateway -> Face Detection -> SQS Req Queue -> Face Recognition -> SQS Resp Queue
